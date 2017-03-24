@@ -11,11 +11,14 @@ Which would focus on two aspects :-
 3.Syntax error handling (run time errors detection).
 
 
+
 Compile code using
 
 g++ -std=c++11 GROUP11.cpp -lpthread.
 
- Description:-
+
+
+Description:-
 
 A C++ code which will read a MIPS assembly code from a file and will find the set of instructions (in vicinity) which can be run in parallel.
 
@@ -23,7 +26,9 @@ eg.
 
 If the sequential code is following 
 
-add $t0 $t1 $t2 mul $t3 $t1 $t2 lw $s1 0($t1)
+add $t0 $t1 $t2 
+mul $t3 $t1 $t2 
+lw $s1 0($t1)
 
 Three treads can run concurrently on the above 3 instructions.
 
